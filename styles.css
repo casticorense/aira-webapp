@@ -1,0 +1,51 @@
+body{
+
+    background:#f5f6fa;
+    font-family:Segoe UI;
+    margin:0;
+}
+
+.container{
+
+    display:flex;
+    height:100vh;
+}
+
+.avatar-section{
+
+    width:30%;
+    background:white;
+    text-align:center;
+    padding:20px;
+}
+
+.avatar{
+
+    width:250px;
+}
+
+.chat-section{
+
+    flex:1;
+    padding:20px;
+}
+
+#messages{
+
+    height:80%;
+    overflow-y:auto;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+input{
+
+    width:80%;
+    padding:10px;
+}
+
+button{
+
+    padding:10px 20px;
+}
