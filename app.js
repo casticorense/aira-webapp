@@ -1,16 +1,25 @@
-function sendMessage(){
+function sendMessage() {
+  const input = document.getElementById("userInput");
+  const messages = document.getElementById("messages");
 
-    const input =
-    document.getElementById("userInput");
+  const userText = input.value.trim();
 
-    const messages =
-    document.getElementById("messages");
+  if (!userText) {
+    return;
+  }
 
-    messages.innerHTML +=
-    `<p><b>Tú:</b> ${input.value}</p>`;
+  messages.innerHTML += `
+    <p class="user-message">
+      <strong>Tú:</strong> ${userText}
+    </p>
+  `;
 
-    messages.innerHTML +=
-    `<p><b>AIRA:</b> Estoy procesando tu consulta...</p>`;
+  messages.innerHTML += `
+    <p class="aira-message">
+      <strong>AIRA:</strong> Estoy procesando tu consulta. En el siguiente paso me conectaremos con Copilot Studio.
+    </p>
+  `;
 
-    input.value="";
+  input.value = "";
+  messages.scrollTop = messages.scrollHeight;
 }
