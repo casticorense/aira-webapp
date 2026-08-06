@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>AIRA Assistant</title>
-    styles.css
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AIRA Assistant</title>
+
+  ./styles.css
 </head>
 
 <body>
-
-<div class="container">
+  <div class="container">
 
     <div class="avatar-section">
+      ./aira.png
 
-        <img src="        <h2>AIRA</h2>
-
-        <p>Arrow Intelligent Resource Assistant</p>
-
+      <h1>AIRA</h1>
+      <p>Arrow Intelligent Resource Assistant</p>
     </div>
 
     <div class="chat-section">
+      <div id="messages" class="messages">
+        <p class="aira-message">
+          <strong>AIRA:</strong> Hola, soy AIRA. ¿En qué puedo ayudarte?
+        </p>
+      </div>
 
-        <div id="messages"></div>
-
+      <div class="input-area">
         <input
-            id="userInput"
-            type="text"
-            placeholder="Pregunta algo..."
-        >
+          id="userInput"
+          type="text"
+          placeholder="Pregunta algo..."
+        />
 
-        <button onclick="sendMessage()">
-            Enviar
-        </button>
-
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
     </div>
 
-</div>
+  </div>
 
-app.js
-
+  ./app.jsscript>
 </body>
 </html>
